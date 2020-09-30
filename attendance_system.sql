@@ -1,0 +1,555 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 30, 2020 at 08:32 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `attendance_system`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `101ec309152019`
+--
+
+CREATE TABLE `101ec309152019` (
+  `Sr_No` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `101ec309152019`
+--
+
+INSERT INTO `101ec309152019` (`Sr_No`, `name`) VALUES
+(1, '101EC3091520190927152445');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `101ec3091520190927152445`
+--
+
+CREATE TABLE `101ec3091520190927152445` (
+  `stat` int(1) DEFAULT NULL,
+  `proxy` int(11) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `101ec3091520190927152445`
+--
+
+INSERT INTO `101ec3091520190927152445` (`stat`, `proxy`, `stud_id`) VALUES
+(NULL, NULL, 170101022);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `101ec3091520190927152445ips`
+--
+
+CREATE TABLE `101ec3091520190927152445ips` (
+  `sr` int(11) NOT NULL,
+  `unq` varchar(225) DEFAULT NULL,
+  `ip` varchar(255) DEFAULT NULL,
+  `stud_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `101ec3091520190927152445ips`
+--
+
+INSERT INTO `101ec3091520190927152445ips` (`sr`, `unq`, `ip`, `stud_id`) VALUES
+(1, '94707', NULL, NULL),
+(2, NULL, '::1', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `103cs302152019`
+--
+
+CREATE TABLE `103cs302152019` (
+  `Sr_No` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `103cs302152019`
+--
+
+INSERT INTO `103cs302152019` (`Sr_No`, `name`) VALUES
+(1, '103CS3021520190927152643'),
+(2, '103CS3021520190927153611');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `103cs3021520190927152643`
+--
+
+CREATE TABLE `103cs3021520190927152643` (
+  `stat` int(1) DEFAULT NULL,
+  `proxy` int(11) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `103cs3021520190927152643`
+--
+
+INSERT INTO `103cs3021520190927152643` (`stat`, `proxy`, `stud_id`) VALUES
+(NULL, NULL, 170101007),
+(1, NULL, 170101010),
+(NULL, NULL, 170101022),
+(NULL, NULL, 170101026),
+(NULL, NULL, 170101051);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `103cs3021520190927153611`
+--
+
+CREATE TABLE `103cs3021520190927153611` (
+  `stat` int(1) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `103cs3021520190927153611`
+--
+
+INSERT INTO `103cs3021520190927153611` (`stat`, `stud_id`) VALUES
+(1, 170101007),
+(0, 170101010),
+(1, 170101022),
+(0, 170101026),
+(1, 170101051);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `506cs702172020`
+--
+
+CREATE TABLE `506cs702172020` (
+  `Sr_No` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `506cs702172020`
+--
+
+INSERT INTO `506cs702172020` (`Sr_No`, `name`) VALUES
+(1, '506CS7021720200930072420'),
+(2, '506CS7021720200930080204'),
+(3, '506CS7021720200930081839'),
+(4, '506CS7021720200930082303');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `506cs7021720200930072420`
+--
+
+CREATE TABLE `506cs7021720200930072420` (
+  `stat` int(1) DEFAULT NULL,
+  `proxy` int(11) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `506cs7021720200930072420`
+--
+
+INSERT INTO `506cs7021720200930072420` (`stat`, `proxy`, `stud_id`) VALUES
+(NULL, NULL, 17501),
+(1, NULL, 17502),
+(NULL, NULL, 17503),
+(NULL, NULL, 17504);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `506cs7021720200930080204`
+--
+
+CREATE TABLE `506cs7021720200930080204` (
+  `stat` int(1) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `506cs7021720200930080204`
+--
+
+INSERT INTO `506cs7021720200930080204` (`stat`, `stud_id`) VALUES
+(1, 17501),
+(0, 17502),
+(1, 17503),
+(0, 17504);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `506cs7021720200930081839`
+--
+
+CREATE TABLE `506cs7021720200930081839` (
+  `stat` int(1) DEFAULT NULL,
+  `proxy` int(11) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `506cs7021720200930081839`
+--
+
+INSERT INTO `506cs7021720200930081839` (`stat`, `proxy`, `stud_id`) VALUES
+(NULL, NULL, 17501),
+(1, 1, 17502),
+(NULL, NULL, 17503),
+(NULL, NULL, 17504);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `506cs7021720200930082303`
+--
+
+CREATE TABLE `506cs7021720200930082303` (
+  `stat` int(1) DEFAULT NULL,
+  `proxy` int(11) DEFAULT NULL,
+  `stud_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `506cs7021720200930082303`
+--
+
+INSERT INTO `506cs7021720200930082303` (`stat`, `proxy`, `stud_id`) VALUES
+(NULL, NULL, 17501),
+(NULL, NULL, 17502),
+(1, NULL, 17503),
+(NULL, NULL, 17504);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin_details`
+--
+
+CREATE TABLE `admin_details` (
+  `admin_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email_id` varchar(255) NOT NULL,
+  `img` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin_details`
+--
+
+INSERT INTO `admin_details` (`admin_id`, `username`, `password`, `name`, `email_id`, `img`) VALUES
+(12, 'usr', 'test', 'Admin_Name', 'admin@gmail.com', 0xffd8ffe000104a46494600010100000100010000ffdb0084000906071013111513121315111511151816161615191315171313151d221615161617181f2820181a251d181521312125292b2e2e2f171f3338332d37282d2e2b010a0a0a0e0d0e1710101737251f252d2f2d2d2d2d2f2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2b2d2d352d2d2d2b2d2dffc000110800e100e103012200021101031101ffc4001b00010100030101010000000000000000000005020304060107ffc4003a1000020101040608070002000701000000000102110305213104124151719115335261628182a1132232b1c1d1f0e1f114234272a2b2f206ffc4001801010101010100000000000000000000000002010304ffc4001f1101010100030003010101000000000000000102111231032141512213ffda000c03010002110311003f00fdb349b78c16b4ab4ad30397a5acbc5c85f5d5fa9104e99ccb136af74b5978b90e96b2f1722082ba46765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e43a5acbc5c8820748765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e43a5acbc5c8820748765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e47468ba546d2bab5c379e64b170e52e289d6648d955400735382faeafd48825ebebabf52209db1e234000b600000000001bf45d16568e91f36f2460d065183aa5bcbb6175d9c73f9df7e5c8ea858416518ae09117e48aeaf3dff00093d89bf266bb5b1947ea8b5c51ea4f8d5707899ff0043abc982de9d7645aac151eec93fd1165169d1e0d17352b2ce1f00053000000000000000002c5c394b8a23962e1ca5c511bf1b3d55001c56e0bebabf522097afaeafd488276c788d0002d800000000dba3d84a72518f3d896f67a2d17478c2345e6f793ae287d4f822b9c777ef85c800086801f2524955e0901f48d7d68f46a6b6e0f8ef3bd69d17f4c673ef5174e6cf979c6b652e09f2c4acf32b2bce800ee800000000000000000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6000000002ddc72f91f732912ae292a496daa675de3a742c61af3ad2b44966dbd88e1a9fe973c6db7d2210fa9d2b92cdbe08d31d3ab959da71d538b4696916ebe245c7478cb2c14ed251d8db7825e4cdeaeaafd56d6f2f5b8ae50a1bc49e8a099c9785ad8c5276b2492c68de6f8672e0715e1754159ce4ad2da2e316ebf126f255c537890ee6d06d2169656f691ff009726b174747254849ad98b589b9ccbf7cb2d7a48e996d3eaac7563b256af53941272e7435e9961a4b849bb5847e57846cdbc2995652fc154f8d13d9bc3c35db6d396b6b634a6c4a8f6a3b4d76505ad6ad7d3f1a697a69fb46c3bd40000000000000000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000000001d776e91a935b54b074efc8edd3b458dbdb7c39aac2ce1acf67cf3c23c9464fcd1cb73d3e2aaee74e3feaa5f396af1553c705c937f0941fd562dd9cbd1827e71d57e6779c3a4680dcfe259da4aca4d252a28c94d2caa9ed5bcfbff0000dfd76b693ee4d417fe093f726f17edae4fff00416dad15a3c1d676cd269671856b293dca9f729cf478b87c36ab171d5a775287cd1b44b3b3fa22a35ce8b17c5e6cdc2dfc8386cacf4882d55285a2594a7aca54d9ad4aa93efc04f44b59aa4ed7553cd594752bea936f950ee0672de11ef2d161676508c16aa52c17158e3b49454bf2d93718a75a55bfc7e49676cf88a000a6000000000000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000000001959cdc5a6b069d51e9343d255a46ab3dab733cc9b2c2da50758ba3fbf12759e5b2f0f5208fa15e5395a252a525860a98ecfd79960e3670a940018d003e49d137b80f2d6afe67dedfdcc003d2e60000000000000000162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104bd7d757ea4413b63c4680016c0000676565293a455599db68d387d516bdd7346dbbb495673abc9aa3eeef3d0464a4aab14d73446b5656c9cbca02a5e9a028ad7860b6addde89654bcb2bea74c56c3d4d8da6b454b7a4f99e54f4173da56c9785b5f9fb3447c93e95976800e4a0c6d2354d6f4d73320079240c54b27daff6647a5cc00eebab4553955e51f77b1196f03e68d76da4d5708ad95da724e2d369e69d391e934cb7d48396dd9def61e69b2736d6d9c3e000b60000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000002adcba4e3a8f6e31e3b57e79921cf72afdb999d8ce51929569aad3a2eed956659cc6c7a9b6b3528b8bdaa87969aa369e69d1f13d5c649a4d6dc49d7b6869ad78ac567debf672c5e3e956214a5837dc76dd9a67c297cdf4cb37b9f6b86ff00f071cd5535bd084aa93de8eb67310f5a9d7158d4fa79ad0f4c9d9e0b18f65e4bfed7ff004fd8b9a3e9d67355ad299a9513471b9b172ba4997ce99ab1f871faa6b1f0c5e6f8bc52e7b0d9a75e518af91a949f9a5dee9f62136db6dbab6eadbcdb2b19fdacb585a65c1ae55c7d8fa636df4be06c3aa58a923d05cf654b3af69d7cb244abbf44f892a3fa562ff08f4491cfe4bf8acc47bf2daae31dd8be2f2feef259b74eabb49bd67f53ddb305b3b8e7d76b35e6b2fda2f3388cacc04c1ac00000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6063692d8b37edde64611fa9f724bcf3fca0328c68a8647c3282ab4b7b03d459d925151dc92e41c1ec7e4f15fb323e372dcb9ff83cce883a668338baa8e0de14c695d870ab3946aa49c68de69ac1e3b78d3c8f4f6d3ac5aa3ab582a6dd98ac0f9a758a9d9c93dcda7b9ac99d66ff00a9e1e6652a7f666b93dafbbc933646297ef37ccf91cdff006c3a25f22eb5a3e0fefc519296cc9ff65bcfa7c9453cc0c6d762ded7b63f8f737d8d94a4e9155657bb34187c38ca5152934f16964f2f6a1d362a1072c145b79259ad94a67fec8bbfe3786abbf459c22d3d5ab75ae2fcb61d893daff07c53ee7edfb33472b56f33a6c296925defdf1fc9a0e9bc7ad9f1398ef3c7360e34c579adfc373338caaaa8182c25dd2ffdb6f35f6668cc0000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6061639577b6ff005ed43edaca89beec38ec3ec55125bb003e9b347559c56f925ee6b33b1aeb4699d5538d4c1ea212af158312d6d94f735467f371f95add258fdbf06f383a35eacf7a5c13af36ff0007d8d9ef6df1fd2c0f8f5f651737faa1f559ef6dfb7d80837ad9c6368f576a4dadcdff0057cce08bc5f1fc2375afd4f1ae2f1dfde73a8e2da7469f1d88ef3c736d4cdda2596b4e317855fb66688469de649b58ac1a368f511b3a24a2e896093c57ec567ba2fcdaf6a1ab4494dd9c5d536d635dbe6b236ab47b62d7baf6fc9e7747d537d97edfb326cfa6a93aca9b238be3b17e7c918215e9d6cbbe8fd91c853be2c71d7595755f97f35e44c3be7c450c2db2aee69ff7954ccc2dfe97c194c6c3e1f4f800b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b630b4ce3c7ec9bfd19983fab82fbe5f666600dfa146b6905e25ed89a0a172d9567add95eef0fd996fd362bdb59571583fd629f1ff5c328daefc1ff0064f69b01e75b9f4ad2e308d5a6eae8bf992b49bd672544b553f37ccf97bdbeb4e8b2861e7b7f5e4701db399c26d0c2cf6f1fc23334a9d2b5c16b3c7ec5a5b818d9caabfb1464077e8178b82d56ab1f75c0af61a5d9cfe992aee783e4799045c4ad95eb4d09bf9a99ca5879249bf2a3245d9a54b5d464db52c316f07b3f5e65d48e7670a9796b9d82707079354ff3c6b89e6ad6cdc64e2f34e87aa23df9618a9adb83fc7e4dc5fbe19625185b7d32e0fec66636df4be0cec9667c000162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104bd7d757ea4413b63c4680016c630cdf14bdbfcb28e8d75ce58cbe45df9f234dc9672f8f56d38eaca8b6a9618f24f99e90e7bd71f5152382174d92ceb2e2e9f63a745b18c57caa89e3b7f27d9babd5d99cbf0bcfedc4da73b6b435e936bab072dcbdf61b09d7dda5209769fb2c7ef412735b511b3e007a1cc30b2dbc5999841e7c40cc04c0000019425469ee75e47ab3c933d5c1e0b81cbe4fc56591ab49b1538b8bdabdf6336839a9e4e5169d1e0d185ae5c70e781ea9c232ac6493a638e383ff3520defa3285a4545522d55e2f3d943b675cd458e63e005b02c5c394b8a23962e1ca5c511bf1b3d55001c56e0bebabf522097afaeafd488276c788d0002d8e9bbed356d22fbe9cf0fc9e8ad2544df2ef7b11e54f45a2dbfc4845edae3c57f2673dcfd565beca145bded7bded66601c94116fc9fcf15b9579ffa2d1e72f2b4adacbb9d39605e3d669ca003b203528e2e8e8d3e39a46d318672e3f8407d8469de7d00000001ea346956117be2bec7972fdcf6b5b3a765b5f95f739fc9e2b2ee001c94d72fad77a6bedfde642bd6d2b6b2eea2e59fbd4b9374955e518baf9fff0027999caadb7b5b7cce9889d31001d52162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104f4da668df123ab5a635387a1976df2474cea489b11c163a1976df243a1976df245778ce2a39db75693a93a3ca583ee7b19d7d0cbb6f921d0cbb6f921759a71554185945a49375a6dde66715b0b7b4518b93d8aa7966eb8bda7a4d3346f88b575b5556afbf71c5d0cbb6f923a62c89b11c163a1976df243a1976df245778ce2a39ae4e95e2abdc8b9d0cbb6f921d0abb6f9237bc38a8b672ad76ad8cc8b1d0cbb6f921d0cbb6f9233bc38a8e0b1d0cbb6f921d0cbb6f921de1c547295c76b49b8f697baff006cddd0cbb6f9236585d6a325253783dc65d4b1b2551001c949b7be91ab1d559cf3ee8ff61cc885bb6bab5a4e4e6eafb8c3a1976df2475cea489b2a382c7432edbe487432edbe48def19c5472c5c394b8a1d0cbb6f923af41d0d59a7475a99ad4b1b23a8007250000000000000000000000000000000000000000000000000000000000003fffd9);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `branch`
+--
+
+CREATE TABLE `branch` (
+  `b_id` int(11) NOT NULL,
+  `branch` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `branch`
+--
+
+INSERT INTO `branch` (`b_id`, `branch`) VALUES
+(3, 'Civil Engineering'),
+(1, 'Computer Science And Engineering'),
+(5, 'Electrical Engineering'),
+(2, 'Electronics And Communication Engineering'),
+(4, 'Mechanical Engineering');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fac_details`
+--
+
+CREATE TABLE `fac_details` (
+  `fac_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email_id` varchar(255) NOT NULL,
+  `img` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `fac_details`
+--
+
+INSERT INTO `fac_details` (`fac_id`, `username`, `password`, `name`, `email_id`, `img`) VALUES
+(501, 'nikhilsingh', 'test', ' Mr. Nikhil Singh', 'singhnikhil@gmail.com', ''),
+(506, 'aayushi', 'test', 'Mrs. Aayushi ', 'aayushi@gmail.com', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stud_details`
+--
+
+CREATE TABLE `stud_details` (
+  `stud_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email_id` varchar(255) NOT NULL,
+  `img` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stud_details`
+--
+
+INSERT INTO `stud_details` (`stud_id`, `username`, `password`, `name`, `email_id`, `img`) VALUES
+(17501, 'aashi', 'tset', 'Aashi Kumari', 'aashi@gmail.com', ''),
+(17502, 'suresh', 'test', 'Suresh Vidyarthi', 'suresh@gmail.com', 0xffd8ffe000104a46494600010100000100010000ffdb0084000906071013111513121315111511151816161615191315171313151d221615161617181f2820181a251d181521312125292b2e2e2f171f3338332d37282d2e2b010a0a0a0e0d0e1710101737251f252d2f2d2d2d2d2f2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2b2d2d352d2d2d2b2d2dffc000110800e100e103012200021101031101ffc4001b00010100030101010000000000000000000005020304060107ffc4003a1000020101040608070002000701000000000102110305213104124151719115335261628182a1132232b1c1d1f0e1f114234272a2b2f206ffc4001801010101010100000000000000000000000002010304ffc4001f1101010100030003010101000000000000000102111231032141512213ffda000c03010002110311003f00fdb349b78c16b4ab4ad30397a5acbc5c85f5d5fa9104e99ccb136af74b5978b90e96b2f1722082ba46765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e43a5acbc5c8820748765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e43a5acbc5c8820748765ee96b2f1721d2d65e2e44103a43b2f74b5978b90e96b2f1722081d21d97ba5acbc5c874b5978b91040e90ecbdd2d65e2e47468ba546d2bab5c379e64b170e52e289d6648d955400735382faeafd48825ebebabf52209db1e234000b600000000001bf45d16568e91f36f2460d065183aa5bcbb6175d9c73f9df7e5c8ea858416518ae09117e48aeaf3dff00093d89bf266bb5b1947ea8b5c51ea4f8d5707899ff0043abc982de9d7645aac151eec93fd1165169d1e0d17352b2ce1f00053000000000000000002c5c394b8a23962e1ca5c511bf1b3d55001c56e0bebabf522097afaeafd488276c788d0002d800000000dba3d84a72518f3d896f67a2d17478c2345e6f793ae287d4f822b9c777ef85c800086801f2524955e0901f48d7d68f46a6b6e0f8ef3bd69d17f4c673ef5174e6cf979c6b652e09f2c4acf32b2bce800ee800000000000000000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6000000002ddc72f91f732912ae292a496daa675de3a742c61af3ad2b44966dbd88e1a9fe973c6db7d2210fa9d2b92cdbe08d31d3ab959da71d538b4696916ebe245c7478cb2c14ed251d8db7825e4cdeaeaafd56d6f2f5b8ae50a1bc49e8a099c9785ad8c5276b2492c68de6f8672e0715e1754159ce4ad2da2e316ebf126f255c537890ee6d06d2169656f691ff009726b174747254849ad98b589b9ccbf7cb2d7a48e996d3eaac7563b256af53941272e7435e9961a4b849bb5847e57846cdbc2995652fc154f8d13d9bc3c35db6d396b6b634a6c4a8f6a3b4d76505ad6ad7d3f1a697a69fb46c3bd40000000000000000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000000001d776e91a935b54b074efc8edd3b458dbdb7c39aac2ce1acf67cf3c23c9464fcd1cb73d3e2aaee74e3feaa5f396af1553c705c937f0941fd562dd9cbd1827e71d57e6779c3a4680dcfe259da4aca4d252a28c94d2caa9ed5bcfbff0000dfd76b693ee4d417fe093f726f17edae4fff00416dad15a3c1d676cd269671856b293dca9f729cf478b87c36ab171d5a775287cd1b44b3b3fa22a35ce8b17c5e6cdc2dfc8386cacf4882d55285a2594a7aca54d9ad4aa93efc04f44b59aa4ed7553cd594752bea936f950ee0672de11ef2d161676508c16aa52c17158e3b49454bf2d93718a75a55bfc7e49676cf88a000a6000000000000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000000001959cdc5a6b069d51e9343d255a46ab3dab733cc9b2c2da50758ba3fbf12759e5b2f0f5208fa15e5395a252a525860a98ecfd79960e3670a940018d003e49d137b80f2d6afe67dedfdcc003d2e60000000000000000162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104bd7d757ea4413b63c4680016c0000676565293a455599db68d387d516bdd7346dbbb495673abc9aa3eeef3d0464a4aab14d73446b5656c9cbca02a5e9a028ad7860b6addde89654bcb2bea74c56c3d4d8da6b454b7a4f99e54f4173da56c9785b5f9fb3447c93e95976800e4a0c6d2354d6f4d73320079240c54b27daff6647a5cc00eebab4553955e51f77b1196f03e68d76da4d5708ad95da724e2d369e69d391e934cb7d48396dd9def61e69b2736d6d9c3e000b60000058b8729714472c5c394b8a237e367aaa0038adc17d757ea4412f5f5d5fa9104ed8f11a0005b000002adcba4e3a8f6e31e3b57e79921cf72afdb999d8ce51929569aad3a2eed956659cc6c7a9b6b3528b8bdaa87969aa369e69d1f13d5c649a4d6dc49d7b6869ad78ac567debf672c5e3e956214a5837dc76dd9a67c297cdf4cb37b9f6b86ff00f071cd5535bd084aa93de8eb67310f5a9d7158d4fa79ad0f4c9d9e0b18f65e4bfed7ff004fd8b9a3e9d67355ad299a9513471b9b172ba4997ce99ab1f871faa6b1f0c5e6f8bc52e7b0d9a75e518af91a949f9a5dee9f62136db6dbab6eadbcdb2b19fdacb585a65c1ae55c7d8fa636df4be06c3aa58a923d05cf654b3af69d7cb244abbf44f892a3fa562ff08f4491cfe4bf8acc47bf2daae31dd8be2f2feef259b74eabb49bd67f53ddb305b3b8e7d76b35e6b2fda2f3388cacc04c1ac00000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6063692d8b37edde64611fa9f724bcf3fca0328c68a8647c3282ab4b7b03d459d925151dc92e41c1ec7e4f15fb323e372dcb9ff83cce883a668338baa8e0de14c695d870ab3946aa49c68de69ac1e3b78d3c8f4f6d3ac5aa3ab582a6dd98ac0f9a758a9d9c93dcda7b9ac99d66ff00a9e1e6652a7f666b93dafbbc933646297ef37ccf91cdff006c3a25f22eb5a3e0fefc519296cc9ff65bcfa7c9453cc0c6d762ded7b63f8f737d8d94a4e9155657bb34187c38ca5152934f16964f2f6a1d362a1072c145b79259ad94a67fec8bbfe3786abbf459c22d3d5ab75ae2fcb61d893daff07c53ee7edfb33472b56f33a6c296925defdf1fc9a0e9bc7ad9f1398ef3c7360e34c579adfc373338caaaa8182c25dd2ffdb6f35f6668cc0000b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b6061639577b6ff005ed43edaca89beec38ec3ec55125bb003e9b347559c56f925ee6b33b1aeb4699d5538d4c1ea212af158312d6d94f735467f371f95add258fdbf06f383a35eacf7a5c13af36ff0007d8d9ef6df1fd2c0f8f5f651737faa1f559ef6dfb7d80837ad9c6368f576a4dadcdff0057cce08bc5f1fc2375afd4f1ae2f1dfde73a8e2da7469f1d88ef3c736d4cdda2596b4e317855fb66688469de649b58ac1a368f511b3a24a2e896093c57ec567ba2fcdaf6a1ab4494dd9c5d536d635dbe6b236ab47b62d7baf6fc9e7747d537d97edfb326cfa6a93aca9b238be3b17e7c918215e9d6cbbe8fd91c853be2c71d7595755f97f35e44c3be7c450c2db2aee69ff7954ccc2dfe97c194c6c3e1f4f800b170e52e288e58b872971446fc6cf55400715b82faeafd48825ebebabf52209db1e234000b630b4ce3c7ec9bfd19983fab82fbe5f666600dfa146b6905e25ed89a0a172d9567add95eef0fd996fd362bdb59571583fd629f1ff5c328daefc1ff0064f69b01e75b9f4ad2e308d5a6eae8bf992b49bd672544b553f37ccf97bdbeb4e8b2861e7b7f5e4701db399c26d0c2cf6f1fc23334a9d2b5c16b3c7ec5a5b818d9caabfb1464077e8178b82d56ab1f75c0af61a5d9cfe992aee783e4799045c4ad95eb4d09bf9a99ca5879249bf2a3245d9a54b5d464db52c316f07b3f5e65d48e7670a9796b9d82707079354ff3c6b89e6ad6cdc64e2f34e87aa23df9618a9adb83fc7e4dc5fbe19625185b7d32e0fec66636df4be0cec9667c000162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104bd7d757ea4413b63c4680016c630cdf14bdbfcb28e8d75ce58cbe45df9f234dc9672f8f56d38eaca8b6a9618f24f99e90e7bd71f5152382174d92ceb2e2e9f63a745b18c57caa89e3b7f27d9babd5d99cbf0bcfedc4da73b6b435e936bab072dcbdf61b09d7dda5209769fb2c7ef412735b511b3e007a1cc30b2dbc5999841e7c40cc04c0000019425469ee75e47ab3c933d5c1e0b81cbe4fc56591ab49b1538b8bdabdf6336839a9e4e5169d1e0d185ae5c70e781ea9c232ac6493a638e383ff3520defa3285a4545522d55e2f3d943b675cd458e63e005b02c5c394b8a23962e1ca5c511bf1b3d55001c56e0bebabf522097afaeafd488276c788d0002d8e9bbed356d22fbe9cf0fc9e8ad2544df2ef7b11e54f45a2dbfc4845edae3c57f2673dcfd565beca145bded7bded66601c94116fc9fcf15b9579ffa2d1e72f2b4adacbb9d39605e3d669ca003b203528e2e8e8d3e39a46d318672e3f8407d8469de7d00000001ea346956117be2bec7972fdcf6b5b3a765b5f95f739fc9e2b2ee001c94d72fad77a6bedfde642bd6d2b6b2eea2e59fbd4b9374955e518baf9fff0027999caadb7b5b7cce9889d31001d52162e1ca5c511cb170e52e288df8d9eaa800e2b705f5d5fa9104f4da668df123ab5a635387a1976df2474cea489b11c163a1976df243a1976df245778ce2a39db75693a93a3ca583ee7b19d7d0cbb6f921d0cbb6f921759a71554185945a49375a6dde66715b0b7b4518b93d8aa7966eb8bda7a4d3346f88b575b5556afbf71c5d0cbb6f923a62c89b11c163a1976df243a1976df245778ce2a39ae4e95e2abdc8b9d0cbb6f921d0abb6f9237bc38a8b672ad76ad8cc8b1d0cbb6f921d0cbb6f9233bc38a8e0b1d0cbb6f921d0cbb6f921de1c547295c76b49b8f697baff006cddd0cbb6f9236585d6a325253783dc65d4b1b2551001c949b7be91ab1d559cf3ee8ff61cc885bb6bab5a4e4e6eafb8c3a1976df2475cea489b2a382c7432edbe487432edbe48def19c5472c5c394b8a1d0cbb6f923af41d0d59a7475a99ad4b1b23a8007250000000000000000000000000000000000000000000000000000000000003fffd9),
+(17503, 'manisha', 'test', 'Manisha Kumar', 'manisha@gmail.com', ''),
+(17504, 'anubhav', 'test', 'Kumar Anubhav', 'anubhav@gmail.com', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subj`
+--
+
+CREATE TABLE `subj` (
+  `sub_id` varchar(10) NOT NULL,
+  `fac_id` int(11) NOT NULL,
+  `stud_id` int(11) NOT NULL,
+  `b_id` int(11) NOT NULL,
+  `sem` int(1) NOT NULL,
+  `year` year(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `subj`
+--
+
+INSERT INTO `subj` (`sub_id`, `fac_id`, `stud_id`, `b_id`, `sem`, `year`) VALUES
+('CS701', 501, 17501, 1, 7, 2020),
+('CS701', 501, 17502, 1, 7, 2020),
+('CS701', 501, 17503, 1, 7, 2020),
+('CS701', 501, 17504, 1, 7, 2020),
+('CS702', 506, 17501, 1, 7, 2020),
+('CS702', 506, 17502, 1, 7, 2020),
+('CS702', 506, 17503, 1, 7, 2020),
+('CS702', 506, 17504, 1, 7, 2020);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_branch`
+--
+
+CREATE TABLE `sub_branch` (
+  `sub_id` varchar(255) NOT NULL,
+  `b_id` int(11) NOT NULL,
+  `sem` int(11) NOT NULL,
+  `choose` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub_branch`
+--
+
+INSERT INTO `sub_branch` (`sub_id`, `b_id`, `sem`, `choose`) VALUES
+('CS701', 1, 7, NULL),
+('CS702', 1, 7, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_details`
+--
+
+CREATE TABLE `sub_details` (
+  `sub_id` varchar(10) NOT NULL,
+  `subject` varchar(225) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub_details`
+--
+
+INSERT INTO `sub_details` (`sub_id`, `subject`) VALUES
+('CS701', 'Artificial Intelligence'),
+('CS702', 'Distribute Computing');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `101ec309152019`
+--
+ALTER TABLE `101ec309152019`
+  ADD PRIMARY KEY (`Sr_No`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `101ec3091520190927152445ips`
+--
+ALTER TABLE `101ec3091520190927152445ips`
+  ADD PRIMARY KEY (`sr`),
+  ADD UNIQUE KEY `ip` (`ip`),
+  ADD KEY `stud_id` (`stud_id`);
+
+--
+-- Indexes for table `103cs302152019`
+--
+ALTER TABLE `103cs302152019`
+  ADD PRIMARY KEY (`Sr_No`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `506cs702172020`
+--
+ALTER TABLE `506cs702172020`
+  ADD PRIMARY KEY (`Sr_No`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `admin_details`
+--
+ALTER TABLE `admin_details`
+  ADD PRIMARY KEY (`admin_id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `branch`
+--
+ALTER TABLE `branch`
+  ADD PRIMARY KEY (`b_id`),
+  ADD UNIQUE KEY `branch` (`branch`);
+
+--
+-- Indexes for table `fac_details`
+--
+ALTER TABLE `fac_details`
+  ADD PRIMARY KEY (`fac_id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `stud_details`
+--
+ALTER TABLE `stud_details`
+  ADD PRIMARY KEY (`stud_id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `subj`
+--
+ALTER TABLE `subj`
+  ADD KEY `fac_id` (`fac_id`),
+  ADD KEY `stud_id` (`stud_id`),
+  ADD KEY `b_id` (`b_id`),
+  ADD KEY `sub_id` (`sub_id`);
+
+--
+-- Indexes for table `sub_branch`
+--
+ALTER TABLE `sub_branch`
+  ADD KEY `sub_id` (`sub_id`),
+  ADD KEY `b_id` (`b_id`);
+
+--
+-- Indexes for table `sub_details`
+--
+ALTER TABLE `sub_details`
+  ADD PRIMARY KEY (`sub_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `101ec309152019`
+--
+ALTER TABLE `101ec309152019`
+  MODIFY `Sr_No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `101ec3091520190927152445ips`
+--
+ALTER TABLE `101ec3091520190927152445ips`
+  MODIFY `sr` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `103cs302152019`
+--
+ALTER TABLE `103cs302152019`
+  MODIFY `Sr_No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `506cs702172020`
+--
+ALTER TABLE `506cs702172020`
+  MODIFY `Sr_No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `101ec3091520190927152445ips`
+--
+ALTER TABLE `101ec3091520190927152445ips`
+  ADD CONSTRAINT `101ec3091520190927152445ips_ibfk_1` FOREIGN KEY (`stud_id`) REFERENCES `stud_details` (`stud_id`);
+
+--
+-- Constraints for table `subj`
+--
+ALTER TABLE `subj`
+  ADD CONSTRAINT `subj_ibfk_1` FOREIGN KEY (`fac_id`) REFERENCES `fac_details` (`fac_id`),
+  ADD CONSTRAINT `subj_ibfk_2` FOREIGN KEY (`stud_id`) REFERENCES `stud_details` (`stud_id`),
+  ADD CONSTRAINT `subj_ibfk_3` FOREIGN KEY (`b_id`) REFERENCES `branch` (`b_id`),
+  ADD CONSTRAINT `subj_ibfk_4` FOREIGN KEY (`sub_id`) REFERENCES `sub_details` (`sub_id`);
+
+--
+-- Constraints for table `sub_branch`
+--
+ALTER TABLE `sub_branch`
+  ADD CONSTRAINT `sub_branch_ibfk_1` FOREIGN KEY (`sub_id`) REFERENCES `sub_details` (`sub_id`),
+  ADD CONSTRAINT `sub_branch_ibfk_2` FOREIGN KEY (`b_id`) REFERENCES `branch` (`b_id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
